@@ -100,7 +100,7 @@ main {
   margin-top: 20px;
   margin-bottom: 20px;
   /* padding: 20px; */
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 section {
@@ -148,4 +148,34 @@ button {
 
 .third > button {
   color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 40em) {
+  body {
+    background-color: black;
+
+  }
+
+  main {
+    width: 40rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+
+@media (min-width: 60em) {
+  main {
+    width: 60rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    border-radius: 50px;
+  }
+
+  button {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  
 }
