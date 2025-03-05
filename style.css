@@ -90,6 +90,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  background-color: hsl(0, 0%, 95%);
 }
 
 main {
@@ -151,11 +152,6 @@ button {
 }
 
 @media (min-width: 40em) {
-  body {
-    background-color: black;
-
-  }
-
   main {
     width: 40rem;
     display: grid;
