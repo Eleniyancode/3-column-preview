@@ -132,12 +132,6 @@ p {
   color: hsla(0, 0%, 100%, 0.75);
 }
 
-button {
-  max-width: 150px;
-  padding: 10px;
-  border-radius: 20px;
-  border: none;
-}
 
 .first > button {
   color: hsl(31, 77%, 52%);
@@ -149,6 +143,21 @@ button {
 
 .third > button {
   color: hsl(179, 100%, 13%);
+}
+
+button {
+  max-width: 150px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  transition: background-color 0.5s ease;
+}
+
+
+button:hover {
+  background-color: transparent;
+  color: white;
+  border-radius: 2px solid white;
 }
 
 @media (min-width: 40em) {
