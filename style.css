@@ -94,7 +94,7 @@ body {
 }
 
 main {
-  width: 15rem;
+  max-width: 30rem;
   /* border: 2px solid purple; */
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -160,16 +160,21 @@ button:hover {
   border-radius: 2px solid white;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 40rem) {
   main {
-    width: 40rem;
+    max-width: 60rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: 1fr;
+  }
+
+  button {
+    margin-top: 50px;
+    margin-bottom: 10px;
   }
 }
 
-@media (min-width: 60em) {
+/* @media (min-width: 60em) {
   main {
     width: 60rem;
     display: grid;
@@ -183,4 +188,4 @@ button:hover {
     margin-bottom: 10px;
   }
   
-}
+} */
