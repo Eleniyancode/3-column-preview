@@ -94,12 +94,12 @@ body {
 }
 
 main {
-  max-width: 30rem;
+  max-width: minmax(30rem, 95%) ;
   /* border: 2px solid purple; */
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
   /* padding: 20px; */
   border-radius: 20px;
 }
@@ -162,7 +162,7 @@ button:hover {
 
 @media (min-width: 40rem) {
   main {
-    max-width: 60rem;
+    max-width: minmax(60rem, 95%) ;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: 1fr;
